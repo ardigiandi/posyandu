@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posyandu Mawar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="../src/posyandu.css" />
+  </head>
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .cursor-pointer {
+      cursor: pointer;
+    }
+
+    .answer {
+      overflow: hidden;
+      max-height: 0px; /* Initial state is collapsed */
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition for max-height and padding */
+    }
+
+    .answer p,
+    .answer ul {
+      padding: 0 16px;
+    }
+
+    .answer.open {
+      max-height: 500px; /* Maximum height for expanded state */
+      padding: 10px 16px; /* Padding for content */
+    }
+  </style>
+  <body class="font-poppins">
+    <header
+      class="bg-softPink text-gray-100 font-semibold fixed top-0 left-0 right-0 z-10 transition-colors"
+    >
+      <div
+        class="container mx-auto px-14 py-6 flex items-center justify-between"
+      >
+        <div class="text-xl">
+          <a href="#" class="flex items-center"
+            ><img
+              src="../asset/logo/logo-posyandu.png"
+              class="h-10 w-auto mr-2"
+            /><span class="hover:text-fuchsia-700 duration-300"
+              >Posyandu Mawar</span
+            ></a
+          >
+        </div>
+        <nav>
+          <ul class="flex space-x-5">
+            <li>
+              <a href="#beranda" class="hover:text-fuchsia-700 duration-300"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="#profil"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Profil</a
+              >
+            </li>
+            <li>
+              <a
+                href="#jadwal"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Jadwal</a
+              >
+            </li>
+            <li>
+              <a
+                href="#galeri"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="#kontak"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-20">
+      <section id="beranda" class="py-14 px-14 bg-softPink">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-12"
+        >
+          <div class="w-full lg:w-1/2 space-y-8">
+            <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Memberikan Pelayanan
+              <span class="text-fuchsia-600">Kesehatan Terbaik</span> untuk
+              Masyarakat
+            </h1>
+            <p class="text-lg text-white leading-relaxed">
+              Posyandu Mawar hadir dengan komitmen memberikan pelayanan
+              kesehatan terbaik untuk ibu dan anak. Dengan tim yang profesional
+              dan fasilitas yang memadai, kami siap melayani kebutuhan kesehatan
+              keluarga Anda.
+            </p>
+          </div>
+
+          <div class="w-full lg:w-1/3">
+            <figure class="rounded-3xl overflow-hidden">
+              <img
+                src="../asset/image/hero1clean.png"
+                alt="Pelayanan Posyandu"
+                class="w-full h-auto object-cover hover:scale-105 transition ease-in-out duration-500"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="wave-container" class="bg-softPink container mx-0 mt-20">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+      </section>
+
+      <section class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="w-full md:w-1/2 mx-auto px-6">
+            <img
+              src="../asset/image/posyandu_profil.jpg"
+              class="rounded-lg shadow-lg w-68 h-auto object-cover hover:scale-105 transition ease-in-out duration-500"
+            />
+          </div>
+          <div class="w-full md:1/2">
+            <h2 class="text-2xl font-bold mb-4 text-blue-800">Profil</h2>
+            <p class="text-lg leading-relaxed">
+              Posyandu Mawar adalah lembaga yang berkomitmen untuk memberikan
+              layanan kesehatan terbaik bagi ibu dan anak. Kami memiliki tim
+              profesional yang siap membantu memenuhi kebutuhan kesehatan
+              keluarga Anda. Di sini, kami menyediakan berbagai layanan
+              kesehatan yang terjangkau dan berkualitas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto mt-20 px-4 py-20 bg-softPink">
+        <div class="flex flex-col justify-center items-center gap-2">
+          <h1 class="text-xl text-white">Statistik Tahun 2024</h1>
+          <p class="text-4xl font-bold text-white">
+            Data Posyandu Mawar Kota Depok
+          </p>
+        </div>
+        <div class="flex justify-between px-20 mt-12">
+          <div class="flex flex-col gap-4 items-center justify-center">
+            <img src="/asset/icon/baby.svg" alt="" class="w-28 h-28" />
+            <h1 class="text-3xl font-bold text-white">150</h1>
+            <p class="text-xl font-medium text-white">Data Bayi</p>
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-center">
+            <img src="/asset/icon/balita.svg" alt="" class="w-28 h-28" />
+            <h1 class="text-3xl font-bold text-white">130</h1>
+            <p class="text-xl font-medium text-white">Data Balita</p>
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-center">
+            <img src="/asset/icon/pregnant.svg" alt="" class="w-28 h-28" />
+            <h1 class="text-3xl font-bold text-white">5</h1>
+            <p class="text-xl font-medium text-white">Data Ibu Hamil</p>
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-center">
+            <img src="/asset/icon/lansia.svg" alt="" class="w-28 h-28" />
+            <h1 class="text-3xl font-bold text-white">100</h1>
+            <p class="text-xl font-medium text-white">Data Lansia</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto mt-20 px-6 py-8">
+        <div class="flex flex-col gap-3">
+          <h1 class="text-xl text-fuchsia-600 font-bold">FAQ"S</h1>
+          <p class="text-3xl font-bold">Pertanyaan yang sering diajukan</p>
+        </div>
+        <div class="flex flex-col mt-14 gap-5">
+          <!-- Pertanyaan 1 -->
+          <div
+            class="flex gap-3 items-center cursor-pointer"
+            onclick="toggleAnswer('faq1')"
+          >
+            <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
+            <div class="flex flex-col">
+              <h1 class="text-lg font-semibold">Apa itu Posyandu Mawar?</h1>
+            </div>
+          </div>
+          <div id="faq1" class="answer hidden mt-2">
+            <p>
+              Posyandu Mawar adalah sebuah Pos Pelayanan Terpadu yang berada di
+              bawah naungan organisasi kesehatan di tingkat desa atau kelurahan.
+              Posyandu ini merupakan tempat pelayanan kesehatan bagi ibu hamil,
+              balita, dan lansia dengan tujuan untuk meningkatkan kesehatan
+              masyarakat melalui kegiatan-kegiatan yang berkaitan dengan
+              pemantauan tumbuh kembang anak, pemberian imunisasi, pemantauan
+              gizi, serta penyuluhan kesehatan.
+            </p>
+          </div>
+
+          <!-- Pertanyaan 2 -->
+          <div
+            class="flex gap-3 items-center cursor-pointer"
+            onclick="toggleAnswer('faq2')"
+          >
+            <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
+            <div class="flex flex-col">
+              <h1 class="text-lg font-semibold">
+                Layanan apa saja yang disediakan oleh Posyandu Mawar?
+              </h1>
+            </div>
+          </div>
+          <div id="faq2" class="answer hidden mt-2">
+            <p>
+              Posyandu Mawar menyediakan berbagai layanan kesehatan yang beragam layanan kesehatan dasar, termasuk pemeriksaan kesehatan, imunisasi, konsultasi gizi, serta penyuluhan tentang kesehatan dan pola hidup sehat bagi ibu dan anak. 
+            </p>
+          </div>
+
+          <!-- Pertanyaan 3 -->
+          <div
+            class="flex gap-3 items-center cursor-pointer"
+            onclick="toggleAnswer('faq3')"
+          >
+            <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
+            <div class="flex flex-col">
+              <h1 class="text-lg font-semibold">
+                Kapan Posyandu Mawar dilaksanakan?
+              </h1>
+            </div>
+          </div>
+          <div id="faq3" class="answer hidden mt-2">
+            <p>
+              Posyandu Mawar biasanya dilaksanakan secara rutin setiap bulan
+              atau sesuai dengan jadwal yang telah ditentukan oleh pihak
+              Posyandu dan pemerintah setempat. Kegiatan ini dilakukan untuk
+              memastikan pemantauan kesehatan bagi ibu hamil, balita, dan lansia
+              berjalan secara teratur.
+            </p>
+          </div>
+
+          <!-- Pertanyaan 4 -->
+          <div
+            class="flex gap-3 items-center cursor-pointer"
+            onclick="toggleAnswer('faq4')"
+          >
+            <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
+            <div class="flex flex-col">
+              <h1 class="text-lg font-semibold">
+                Siapa yang dapat mengakses layanan Posyandu Mawar?
+              </h1>
+            </div>
+          </div>
+          <div id="faq4" class="answer hidden mt-2">
+            <p>
+              Layanan Posyandu Mawar terbuka untuk masyarakat setempat,
+              khususnya bagi ibu hamil, balita, dan lansia. Setiap warga yang
+              memenuhi kriteria tersebut dapat datang dan mendapatkan layanan
+              kesehatan tanpa dipungut biaya.
+            </p>
+          </div>
+
+          <!-- Pertanyaan 5 -->
+          <div
+            class="flex gap-3 items-center cursor-pointer"
+            onclick="toggleAnswer('faq5')"
+          >
+            <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
+            <div class="flex flex-col">
+              <h1 class="text-lg font-semibold">
+                Apakah ada biaya untuk mengikuti layanan di Posyandu Mawar?
+              </h1>
+            </div>
+          </div>
+          <div id="faq5" class="answer hidden mt-2">
+            <p>
+              Layanan di Posyandu Mawar biasanya disediakan secara gratis atau
+              dengan biaya yang sangat terjangkau. Hal ini bertujuan untuk
+              memberikan akses kesehatan kepada seluruh lapisan masyarakat,
+              terutama bagi mereka yang membutuhkan layanan dasar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+      <footer class="mt-20">
+        kkdvj
+      </footer>
+    </main>
+
+    <script src="/dist/script/main.js"></script>
+  </body>
+</html>
