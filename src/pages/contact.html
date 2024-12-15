@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Contact</title>
+  </head>
+  <body class="font-poppins">
+    <header
+      class="bg-softPink text-gray-100 font-semibold fixed top-0 left-0 right-0 z-10 transition-colors"
+    >
+      <div
+        class="container mx-auto lg:px-14 px-5 py-6 flex items-center justify-between"
+      >
+        <div class="text-xl">
+          <a href="#" class="flex items-center"
+            ><img
+              src="/asset/logo/logo-posyandu.png"
+              class="h-10 w-auto mr-2"
+            /><span class="hover:text-fuchsia-700 duration-300"
+              >Posyandu Mawar</span
+            ></a
+          >
+        </div>
+        <nav>
+          <ul class="flex gap-8">
+            <li>
+              <a href="/index.html" class="hover:text-fuchsia-700 duration-300"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="#profil"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Profil</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/jadwal.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Jadwal</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/galeri.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/contact.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="bg-pastelPink flex flex-col text-center gap-4 mt-20 py-32 justify-center items-center"
+      >
+        <div class="flex gap-4 justify-center items-center">
+          <a href="/index.html" class="text-base font-semibold text-white"
+            >Beranda</a
+          >
+          <img src="/asset/icon/chevron-right.svg" alt="" />
+          <a href="#" class="text-base font-semibold text-softPink">Contact</a>
+        </div>
+        <h1 class="text-4xl font-bold text-white">Contact Posyandu</h1>
+      </section>
+
+      <section
+        class="container mx-auto px-4 py-8 mt-10 flex flex-wrap gap-8 justify-between"
+      >
+        <div
+          class="w-full lg:w-1/2 h-screen bg-white rounded-3xl shadow-lg p-8"
+        >
+          <h2 class="text-2xl font-bold mb-4">Form Pendaftaran Posyandu</h2>
+          <form action="" class="flex flex-wrap gap-4">
+            <div class="w-full md:w-1/2">
+              <label for="nama" class="block text-sm font-medium mb-2"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-softPink"
+                placeholder="Masukkan nama lengkap"
+              />
+            </div>
+            <div class="w-full md:w-1/2">
+              <label for="tanggal_lahir" class="block text-sm font-medium mb-2"
+                >Tanggal Lahir</label
+              >
+              <input
+                type="date"
+                id="tanggal_lahir"
+                name="tanggal_lahir"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-softPink"
+              />
+            </div>
+            <div class="w-full">
+              <label for="alamat" class="block text-sm font-medium mb-2"
+                >Alamat</label
+              >
+              <input
+                type="text"
+                id="alamat"
+                name="alamat"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-softPink"
+                placeholder="Masukkan alamat"
+              />
+            </div>
+            <div class="w-full">
+              <label for="no_telepon" class="block text-sm font-medium mb-2"
+                >No. Telepon</label
+              >
+              <input
+                type="tel"
+                id="no_telepon"
+                name="no_telepon"
+                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-softPink"
+                placeholder="Masukkan no. telepon"
+              />
+            </div>
+            <div class="w-full">
+              <button
+                type="submit"
+                class="w-full p-4 bg-pastelPink text-white rounded-lg hover:bg-softPink focus:outline-none focus:ring focus:ring-softPink"
+              >
+                Daftar
+              </button>
+            </div>
+          </form>
+        </div>
+        <img
+          src="/asset/image/posyandu.jpg"
+          alt=""
+          class="w-full lg:w-[45%] rounded-3xl"
+        />
+      </section>
+    </main>
+
+    <footer class="mt-20 bg-softPink">
+      <div class="container mx-auto px-4 py-8">
+        <p class="text-center text-white">
+          &copy; 2023 Posyandu Mawar. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

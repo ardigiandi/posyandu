@@ -9,3 +9,12 @@ function toggleAnswer(faqId) {
         setTimeout(() => { answer.classList.add('hidden'); }, 300); // Hide after transition
     }
 }
+
+// NAVBAR
+ // Toggle menu for small screens
+ const menuButton = document.getElementById('menu-button');
+ const menu = document.getElementById('menu');
+
+ menuButton.addEventListener('click', () => {
+   menu.classList.toggle('hidden');
+ });

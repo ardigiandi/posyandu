@@ -19,6 +19,7 @@ module.exports = {
         pastelPink: '#E0BCCC',
         pastelOrange: '#EBC5BD',
         darkBrown: '#6E605F',
+        bluedongker: '#03055B',
       },
     },
   },

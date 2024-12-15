@@ -43,7 +43,7 @@
       class="bg-softPink text-gray-100 font-semibold fixed top-0 left-0 right-0 z-10 transition-colors"
     >
       <div
-        class="container mx-auto px-14 py-6 flex items-center justify-between"
+        class="container mx-auto lg:px-14 px-5 py-6 flex items-center justify-between"
       >
         <div class="text-xl">
           <a href="#" class="flex items-center"
@@ -56,9 +56,9 @@
           >
         </div>
         <nav>
-          <ul class="flex space-x-5">
+          <ul class="flex gap-8">
             <li>
-              <a href="#beranda" class="hover:text-fuchsia-700 duration-300"
+              <a href="/index.html" class="hover:text-fuchsia-700 duration-300"
                 >Beranda</a
               >
             </li>
@@ -71,21 +71,21 @@
             </li>
             <li>
               <a
-                href="#jadwal"
+                href="/src/pages/jadwal.html"
                 class="hover:text-fuchsia-700 duration-300 text-white"
                 >Jadwal</a
               >
             </li>
             <li>
               <a
-                href="#galeri"
+                href="/src/pages/galeri.html"
                 class="hover:text-fuchsia-700 duration-300 text-white"
                 >Galeri</a
               >
             </li>
             <li>
               <a
-                href="#kontak"
+                href="/src/pages/contact.html"
                 class="hover:text-fuchsia-700 duration-300 text-white"
                 >Kontak</a
               >
@@ -134,7 +134,7 @@
       </section>
 
       <section class="container mx-auto px-4 py-8">
-        <div class="flex flex-col md:flex-row items-center">
+        <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-0">
           <div class="w-full md:w-1/2 mx-auto px-6">
             <img
               src="../asset/image/posyandu_profil.jpg"
@@ -143,7 +143,7 @@
           </div>
           <div class="w-full md:1/2">
             <h2 class="text-2xl font-bold mb-4 text-blue-800">Profil</h2>
-            <p class="text-lg leading-relaxed">
+            <p class="lg:text-lg text-base leading-relaxed">
               Posyandu Mawar adalah lembaga yang berkomitmen untuk memberikan
               layanan kesehatan terbaik bagi ibu dan anak. Kami memiliki tim
               profesional yang siap membantu memenuhi kebutuhan kesehatan
@@ -155,13 +155,13 @@
       </section>
 
       <section class="container mx-auto mt-20 px-4 py-20 bg-softPink">
-        <div class="flex flex-col justify-center items-center gap-2">
+        <div class="flex flex-col justify-center items-center gap-2 text-center lg:text-start">
           <h1 class="text-xl text-white">Statistik Tahun 2024</h1>
           <p class="text-4xl font-bold text-white">
             Data Posyandu Mawar Kota Depok
           </p>
         </div>
-        <div class="flex justify-between px-20 mt-12">
+        <div class="flex flex-wrap justify-center gap-12 lg:gap-0 lg:justify-between px-20 mt-12">
           <div class="flex flex-col gap-4 items-center justify-center">
             <img src="/asset/icon/baby.svg" alt="" class="w-28 h-28" />
             <h1 class="text-3xl font-bold text-white">150</h1>
@@ -198,7 +198,7 @@
           >
             <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
             <div class="flex flex-col">
-              <h1 class="text-lg font-semibold">Apa itu Posyandu Mawar?</h1>
+              <h1 class="text-base lg:text-lg font-semibold">Apa itu Posyandu Mawar?</h1>
             </div>
           </div>
           <div id="faq1" class="answer hidden mt-2">
@@ -220,14 +220,17 @@
           >
             <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
             <div class="flex flex-col">
-              <h1 class="text-lg font-semibold">
+              <h1 class="text-base lg:text-lg font-semibold">
                 Layanan apa saja yang disediakan oleh Posyandu Mawar?
               </h1>
             </div>
           </div>
           <div id="faq2" class="answer hidden mt-2">
             <p>
-              Posyandu Mawar menyediakan berbagai layanan kesehatan yang beragam layanan kesehatan dasar, termasuk pemeriksaan kesehatan, imunisasi, konsultasi gizi, serta penyuluhan tentang kesehatan dan pola hidup sehat bagi ibu dan anak. 
+              Posyandu Mawar menyediakan berbagai layanan kesehatan yang beragam
+              layanan kesehatan dasar, termasuk pemeriksaan kesehatan,
+              imunisasi, konsultasi gizi, serta penyuluhan tentang kesehatan dan
+              pola hidup sehat bagi ibu dan anak.
             </p>
           </div>
 
@@ -238,7 +241,7 @@
           >
             <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
             <div class="flex flex-col">
-              <h1 class="text-lg font-semibold">
+              <h1 class="text-base lg:text-lg font-semibold">
                 Kapan Posyandu Mawar dilaksanakan?
               </h1>
             </div>
@@ -260,7 +263,7 @@
           >
             <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
             <div class="flex flex-col">
-              <h1 class="text-lg font-semibold">
+              <h1 class="text-base lg:text-lg font-semibold">
                 Siapa yang dapat mengakses layanan Posyandu Mawar?
               </h1>
             </div>
@@ -281,7 +284,7 @@
           >
             <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
             <div class="flex flex-col">
-              <h1 class="text-lg font-semibold">
+              <h1 class="text-base lg:text-lg font-semibold">
                 Apakah ada biaya untuk mengikuti layanan di Posyandu Mawar?
               </h1>
             </div>
@@ -297,9 +300,12 @@
         </div>
       </section>
 
-      
-      <footer class="mt-20">
-        kkdvj
+      <footer class="mt-20 bg-softPink">
+        <div class="container mx-auto px-4 py-8">
+          <p class="text-center text-white">
+            &copy; 2023 Posyandu Mawar. All rights reserved.
+          </p>
+        </div>
       </footer>
     </main>
 
