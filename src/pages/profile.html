@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Profile</title>
+  </head>
+  <body class="font-poppins">
+    <header
+      class="bg-softPink text-gray-100 font-semibold fixed top-0 left-0 right-0 z-10 transition-colors"
+    >
+      <div
+        class="container mx-auto lg:px-14 px-5 py-6 flex items-center justify-between"
+      >
+        <div class="text-xl">
+          <a href="#" class="flex items-center">
+            <img
+              src="/asset/logo/logo-posyandu.png"
+              class="h-10 w-auto mr-2"
+            />
+            <span class="hover:text-fuchsia-700 duration-300"
+              >Posyandu Mawar</span
+            >
+          </a>
+        </div>
+        <nav>
+          <button
+            id="menu-toggle"
+            class="block lg:hidden text-gray-100 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <ul
+            id="menu"
+            class="gap-8 hidden lg:flex lg:static absolute bg-softPink lg:bg-transparent top-full left-0 right-0 px-5 py-6 lg:py-0 lg:flex-row flex-col"
+          >
+            <li>
+              <a href="/index.html" class="hover:text-fuchsia-700 duration-300"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/profile.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Profil</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/jadwal.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Jadwal</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/galeri.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/contact.html"
+                class="hover:text-fuchsia-700 duration-300 text-white"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="bg-pastelPink flex flex-col text-center gap-4 mt-20 py-32 justify-center items-center"
+      >
+        <div class="flex gap-4 justify-center items-center">
+          <a href="/index.html" class="text-base font-semibold text-white"
+            >Beranda</a
+          >
+          <img src="/asset/icon/chevron-right.svg" alt="" />
+          <a href="#" class="text-base font-semibold text-softPink">Profile</a>
+        </div>
+        <h1 class="text-4xl font-bold text-white">Profile Posyandu</h1>
+      </section>
+
+      <section
+        class="container px-6 mx-auto mt-28 justify-center items-center lg:justify-start lg:items-start flex flex-col gap-7"
+      >
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/foto1.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Erni Susilowati</h1>
+            <p class="text-xl font-medium">Jabatan : Kepala Posyandu</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/bendahara1.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Sumiati</h1>
+            <p class="text-xl font-medium">Jabatan : Bendahara</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/sekretaris.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Wiwi Saodah</h1>
+            <p class="text-xl font-medium">Jabatan : Sekretaris</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota1.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Ayuwati</h1>
+            <p class="text-xl font-medium">Jabatan : Anggota</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota2.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Elda fitriyeni</h1>
+            <p class="text-xl font-medium">Jabatan : Anggota</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota3.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Kuaminarti</h1>
+            <p class="text-xl font-medium">Jabatan : Anggota</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota4.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Nurlaela</h1>
+            <p class="text-xl font-medium">Jabatan : Anggota</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota5.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Desti Abnur Naeni</h1>
+            <p class="text-xl font-medium">Jabatan : Desti Abnur Naeni</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota6.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Erni Susilowati</h1>
+            <p class="text-xl font-medium">Jabatan : Kepala Posyandu</p>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <img
+            src="/asset/image/anggota7.jpg"
+            alt=""
+            class="w-[300px] h-[300px]"
+          />
+          <div class="flex flex-col gap-3 mt-6">
+            <h1 class="text-xl font-medium">Nama : Erni Susilowati</h1>
+            <p class="text-xl font-medium">Jabatan : Kepala Posyandu</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-9 py-28 bg-softPink mt-10">
+        <video class="rounded-2xl" controls>
+          <source src="/asset/image/video.mp4" type="video/mp4">
+        </video>
+      </section>
+    </main>
+
+    <footer class="mt-20 bg-softPink">
+      <div class="container mx-auto px-4 py-8">
+        <p class="text-center text-white">
+          &copy; 2023 Posyandu Mawar. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/dist/script/main.js"></script>
+  </body>
+</html>

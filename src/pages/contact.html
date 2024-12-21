@@ -15,17 +15,41 @@
         class="container mx-auto lg:px-14 px-5 py-6 flex items-center justify-between"
       >
         <div class="text-xl">
-          <a href="#" class="flex items-center"
-            ><img
+          <a href="#" class="flex items-center">
+            <img
               src="/asset/logo/logo-posyandu.png"
               class="h-10 w-auto mr-2"
-            /><span class="hover:text-fuchsia-700 duration-300"
+            />
+            <span class="hover:text-fuchsia-700 duration-300"
               >Posyandu Mawar</span
-            ></a
-          >
+            >
+          </a>
         </div>
         <nav>
-          <ul class="flex gap-8">
+          <button
+            id="menu-toggle"
+            class="block lg:hidden text-gray-100 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <ul
+            id="menu"
+            class="gap-8 hidden lg:flex lg:static absolute bg-softPink lg:bg-transparent top-full left-0 right-0 px-5 py-6 lg:py-0 lg:flex-row flex-col"
+          >
             <li>
               <a href="/index.html" class="hover:text-fuchsia-700 duration-300"
                 >Beranda</a
@@ -33,7 +57,7 @@
             </li>
             <li>
               <a
-                href="#profil"
+                href="/src/pages/profile.html"
                 class="hover:text-fuchsia-700 duration-300 text-white"
                 >Profil</a
               >
@@ -85,7 +109,7 @@
           class="w-full lg:w-1/2 h-screen bg-white rounded-3xl shadow-lg p-8"
         >
           <h2 class="text-2xl font-bold mb-4">Form Pendaftaran Posyandu</h2>
-          <form action="" class="flex flex-wrap gap-4">
+          <form action="" class="flex flex-wrap gap-4" id="registration-form">
             <div class="w-full md:w-1/2">
               <label for="nama" class="block text-sm font-medium mb-2"
                 >Nama Lengkap</label
@@ -158,5 +182,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="/dist/script/main.js"></script>
   </body>
 </html>

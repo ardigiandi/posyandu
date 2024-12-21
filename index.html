@@ -13,31 +13,6 @@
     <link rel="stylesheet" href="/dist/output.css" />
     <link rel="stylesheet" href="../src/posyandu.css" />
   </head>
-  <style>
-    .hidden {
-      display: none;
-    }
-
-    .cursor-pointer {
-      cursor: pointer;
-    }
-
-    .answer {
-      overflow: hidden;
-      max-height: 0px; /* Initial state is collapsed */
-      transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition for max-height and padding */
-    }
-
-    .answer p,
-    .answer ul {
-      padding: 0 16px;
-    }
-
-    .answer.open {
-      max-height: 500px; /* Maximum height for expanded state */
-      padding: 10px 16px; /* Padding for content */
-    }
-  </style>
   <body class="font-poppins">
     <header
       class="bg-softPink text-gray-100 font-semibold fixed top-0 left-0 right-0 z-10 transition-colors"
@@ -46,17 +21,41 @@
         class="container mx-auto lg:px-14 px-5 py-6 flex items-center justify-between"
       >
         <div class="text-xl">
-          <a href="#" class="flex items-center"
-            ><img
+          <a href="#" class="flex items-center">
+            <img
               src="../asset/logo/logo-posyandu.png"
               class="h-10 w-auto mr-2"
-            /><span class="hover:text-fuchsia-700 duration-300"
+            />
+            <span class="hover:text-fuchsia-700 duration-300"
               >Posyandu Mawar</span
-            ></a
-          >
+            >
+          </a>
         </div>
         <nav>
-          <ul class="flex gap-8">
+          <button
+            id="menu-toggle"
+            class="block lg:hidden text-gray-100 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <ul
+            id="menu"
+            class="gap-8 hidden lg:flex lg:static absolute bg-softPink lg:bg-transparent top-full left-0 right-0 px-5 py-6 lg:py-0 lg:flex-row flex-col"
+          >
             <li>
               <a href="/index.html" class="hover:text-fuchsia-700 duration-300"
                 >Beranda</a
@@ -64,7 +63,7 @@
             </li>
             <li>
               <a
-                href="#profil"
+                href="/src/pages/profile.html"
                 class="hover:text-fuchsia-700 duration-300 text-white"
                 >Profil</a
               >
@@ -126,7 +125,7 @@
         </div>
       </section>
 
-      <section id="wave-container" class="bg-softPink container mx-0 mt-20">
+      <section id="wave-container" class="bg-softPink container mx-0 mt-20 hidden lg:block">
         <div class="wave wave1"></div>
         <div class="wave wave2"></div>
         <div class="wave wave3"></div>
@@ -155,13 +154,17 @@
       </section>
 
       <section class="container mx-auto mt-20 px-4 py-20 bg-softPink">
-        <div class="flex flex-col justify-center items-center gap-2 text-center lg:text-start">
+        <div
+          class="flex flex-col justify-center items-center gap-2 text-center lg:text-start"
+        >
           <h1 class="text-xl text-white">Statistik Tahun 2024</h1>
           <p class="text-4xl font-bold text-white">
             Data Posyandu Mawar Kota Depok
           </p>
         </div>
-        <div class="flex flex-wrap justify-center gap-12 lg:gap-0 lg:justify-between px-20 mt-12">
+        <div
+          class="flex flex-wrap justify-center gap-12 lg:gap-0 lg:justify-between px-20 mt-12"
+        >
           <div class="flex flex-col gap-4 items-center justify-center">
             <img src="/asset/icon/baby.svg" alt="" class="w-28 h-28" />
             <h1 class="text-3xl font-bold text-white">150</h1>
@@ -198,7 +201,9 @@
           >
             <img src="/asset/icon/faq.svg" alt="" class="w-6 h-6" />
             <div class="flex flex-col">
-              <h1 class="text-base lg:text-lg font-semibold">Apa itu Posyandu Mawar?</h1>
+              <h1 class="text-base lg:text-lg font-semibold">
+                Apa itu Posyandu Mawar?
+              </h1>
             </div>
           </div>
           <div id="faq1" class="answer hidden mt-2">
